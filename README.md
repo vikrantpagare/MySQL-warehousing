@@ -31,3 +31,14 @@ In this project we will implement the core concepts like Fact Table and Dimensio
 
 
 
+## For this project we will use MySQL workbench locally to simulate the Data WareHouse concepts
+
+We will create 'sales' Database to mimicking as historical data , and add some values to it (This will work as our source to extract data from).
+
+We will use 2 layer ELT architecture consisting 
+
+  -layer 1 : Staging Layer (Which will be the Raw data as it is from our source database)
+
+  -layer 2 : Core Layer (Which will be curated data i.e. transformed data)
+
+After the Extraction of the data we will perform transformation needed and 
