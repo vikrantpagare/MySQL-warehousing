@@ -27,7 +27,17 @@ Once data is loaded, it is typically not updated or deleted, creating a stable r
 Subject-Oriented:
 The data is organized around key business subjects, like sales or customers, to support business analysis. 
 
-In this project we will implement the core concepts like Fact Table and Dimension Table , Dimensional Modeling particularly Star Schema
+### 🔵In this project we will implement the core concepts of data warehousing like 
+
+🔹ETL workflow 
+
+🔹2 layered ETL Architecture
+
+🔹Fact Table and Dimension Table 
+
+🔹Dimensional Modeling particularly Star Schema 
+
+
 
 
 
@@ -43,9 +53,18 @@ Extaction Technique - Databse Querying
 
 # Extraction
 
+## ETL workflow
+Before we start implementing the actual concepts lets just talk about what are we actully going to do 
+
+We are going to request(pull) everything (full) data from source system i.e. the historical data transform it as the need and then load it to a datawarehouse using SQL database queries 
+
+
+
+### Setup your historical database
 We will create 'sales' Database to mimicking as historical data inside the database we will create 'orders' table and add some values to it (This will work as our source to extract data from).
 (See SQL scripts directory )
 
+###
 Create a Database working as Data Warehouse 'salesDWH'
 
 We will use 2 layer ELT architecture consisting 
