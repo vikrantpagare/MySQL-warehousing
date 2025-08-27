@@ -39,32 +39,26 @@ The data is organized around key business subjects, like sales or customers, to 
 
 
 
-
-
 ## For this project we will use MySQL workbench locally to simulate the Data WareHouse concepts
 
-### Points to be noted
-Extraction Method - Pull Extraction
-
-Extraction Type - Full Extraction
-
-Extaction Technique - Databse Querying
-
-
-# Extraction
-
 ## ETL workflow
-Before we start implementing the actual concepts lets just talk about what are we actully going to do 
+Before we start implementing the actual concepts lets just talk about what are we actully going to do in this project
+We are going to request(pull) everything (full) data from source system i.e. the historical data transform it as the need and then load it to a datawarehouse using SQL database queries
 
-We are going to request(pull) everything (full) data from source system i.e. the historical data transform it as the need and then load it to a datawarehouse using SQL database queries 
+### Points to be noted
+Extraction Type - Pull Extraction
 
+Extraction Method - Full Extraction
 
+Extration Technique - Database Querying
 
 ### Setup your historical database
 We will create 'sales' Database to mimicking as historical data inside the database we will create 'orders' table and add some values to it (This will work as our source to extract data from).
 (See SQL scripts directory )
 
-###
+# Extraction
+
+### Now lets start implementing 
 Create a Database working as Data Warehouse 'salesDWH'
 
 We will use 2 layer ELT architecture consisting 
